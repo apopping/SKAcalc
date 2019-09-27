@@ -1,0 +1,46 @@
+# SKA parameters:
+#
+[settings]
+########################################
+
+# SKA band definitions in MHz
+low_band1_min = 50
+low_band1_max = 350
+mid_band1_min = 350
+mid_band1_max = 1050
+mid_band2_min = 950
+mid_band2_max = 1760
+mid_band5_min = 4600
+mid_band5_max = 13800
+
+# SKA bandwidth limit
+bandwidth_max = 300
+
+# SKA input for UVGEN in MIRIAD
+mid_config = '/var/www/ska-calculator/ska_calculator/data/configurations/coords_MID.cfg'
+mid_tsys_band1 = /var/www/ska-calculator/ska_calculator/data/mid_tsys_band1.csv
+mid_tsys_band2 = /var/www/ska-calculator/ska_calculator/data/mid_tsys_band2.csv
+mid_baseunit = -3.335640952
+mid_dish = 14.53  # average of 133x15m SKA and 64x13.5m MeerKAT
+mid_eff = 0.9
+#mid_tsys = 16
+mid_lat = -30.7
+mid_sys_eff = 0.9
+mid_qmax = 120000  # longest baseline (m)
+mid_nant = 198 # number of telescopes
+
+low_config = '/var/www/ska-calculator/ska_calculator/data/configurations/coords_LOW.cfg'
+low_tsys_band1 = /var/www/ska-calculator/ska_calculator/data/low_tsys_band1.csv
+low_baseunit = -3.335640952
+low_dish = 35.0  
+low_eff = 0.2
+#low_tsys = 10
+low_lat = -26.8
+low_sys_eff = 0.9
+low_qmax = 65000 # longest baseline (m)
+low_nant =  513
+
+# settings for the web application
+
+sample_time = 720 # this is the cycle being used
+cont_chan = 10 # number of continuum channels 

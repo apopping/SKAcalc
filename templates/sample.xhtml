@@ -1,0 +1,80 @@
+<html>
+
+
+<head>
+  <title>SKA sensitivity calculator results</title>
+</head>
+
+<body>
+
+
+
+<font face="arial"> 
+<table style="border-spacing:10px">
+       <tr>
+         <td><h2><font color="navy">Calculated Sensitivities</font></h2></td>
+	  <td width="200"></td>
+         <td><a href="http://www.icrar.org"><img src="img/icrar-logo.png" width="300" /></a></td>
+         <td><a href="http://www.skatelescope.org"><img src="img/logo-SKA-new.png" width="200" /></a></td>
+       </tr>
+      </table>
+  <table style="border-spacing:10px">
+    <tr>
+      <td>Total integration time:</td>
+      <td>${total_time} hours</td>
+    </tr>
+    <tr>
+      <td>Beam major axis:</td>
+      <td>${bmaj} arcsec</td>
+    </tr>
+    <tr>
+      <td>Beam minor axis:</td>
+      <td>${bmin} arcsec</td>
+    </tr>
+    <tr>
+      <td>Beam position angle:</td>
+      <td>${bpa} degrees</td>
+    </tr>
+    <tr>  
+      <td>Noise:</td>
+      <td>${rms} mJy km/s</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>${z_string}</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Width of ${width} MHz corresponds to ${vel_width} km/s</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Brightness Temperature: ${Tb} K</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>${NHI_string}</td>
+    </tr>
+ </table>
+
+
+  <a href="${psf_png}"><img src="${psf_png}" height="300" width="400" /></a>
+  <a href="${noise_png}"><img src="${noise_png}" height="300" width="400" /></a>
+  <!-- <a href="${uu_vv_png}"><img src="${uu_vv_png}" height="300" width="400" /></a> -->
+
+
+
+  <h3>Download results:</h3>
+  <p>
+    <a href="${psf_png}">psf.png</a>
+    <a href="${psf_fits}">psf.fits</a>
+    <a href="${noise_png}">noise.png</a>
+    <!-- <a href="${noise_fits}">noise.fits</a> -->
+    <!-- <a href="${uu_vv_png}">uu_vv.png</a> -->
+  </p>
+  
+
+  <p>generated at: ${time}</p>
+</font>
+</body>
+</html>
